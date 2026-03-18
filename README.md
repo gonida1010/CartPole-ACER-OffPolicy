@@ -99,7 +99,7 @@ Actor loss를 직접 backward 하는 대신,
 
 하는 방식으로 구현했습니다.
 
-즉, 이번 구현은 과제 요구사항에 맞게 ACER의 핵심 요소인 Replay Buffer, Importance Sampling, Retrace, Trust Region Update를 모두 포함합니다.
+즉, ACER의 핵심 요소인 Replay Buffer, Importance Sampling, Retrace, Trust Region Update를 모두 포함합니다.
 
 ## 5. 실행 방법
 
@@ -133,8 +133,6 @@ python main.py
 이 결과는 구현한 ACER가 CartPole 환경에서 충분히 높은 수준으로 학습되었음을 보여줍니다.
 
 ## 7. 정리
-
-이번 과제를 통해 확인할 수 있는 점은 다음과 같습니다.
 
 - Actor-Critic 계열은 정책 기반 학습의 장점이 있지만, 기본적으로 on-policy라 샘플 효율이 낮을 수 있습니다.
 - ACER는 Replay Buffer를 도입하여 샘플 재사용을 가능하게 합니다.
