@@ -2,6 +2,8 @@
 
 CartPole 환경에서 ACER(Actor-Critic with Experience Replay) 알고리즘을 직접 재구현한 PyTorch 프로젝트입니다. 이 과제의 핵심은 단순 실행이 아니라, 왜 ACER가 등장했는지와 기존 Actor-Critic 계열 알고리즘의 한계를 어떻게 보완하는지를 실제 코드 수준에서 이해하는 데 있습니다.
 
+[📖블로그 이론 정리](https://pak1010pak.tistory.com/163)
+
 ## 1. 과제 목적
 
 ACER는 Actor-Critic의 정책 기반 학습 장점과 Replay Buffer의 샘플 재사용 장점을 결합한 알고리즘입니다. 기존 on-policy Actor-Critic 계열은 최신 정책으로 수집한 데이터만 사용하는 경우가 많아 샘플 효율이 낮고, 과거 경험을 적극적으로 재사용하기 어렵습니다. ACER는 이 문제를 해결하기 위해 다음 요소를 함께 사용합니다.
